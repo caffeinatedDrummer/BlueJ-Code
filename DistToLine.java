@@ -5,7 +5,6 @@ public class DistToLine {
 	public static double C;
 	public static double getDist(double x , double y)
 	{
-		double distance = Math.abs(A*x + B*y + C) / Math.sqrt(A*A + B*B);
-		return distance;
-	}
+		return Math.abs(A*x + B*y + C) / Math.sqrt(A*A + B*B); //for maximum efficiency we just do the math and return it on the same line
+	}														   //(no variable declaration required)
 }
